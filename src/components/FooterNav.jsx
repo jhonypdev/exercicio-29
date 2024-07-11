@@ -1,5 +1,5 @@
 const FooterNav = () => (
-  <div className="text-center gap-4">
+  <div className="text-center gap-4 text-white">
     <ul className="flex gap-4 md:mt-6">
       <li className="inline-block ">
         <a href="#">Shop</a>

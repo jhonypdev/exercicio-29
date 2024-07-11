@@ -36,7 +36,7 @@ const DealOfWeek = () => {
             <div className="relative top-auto left-auto md:h-full h-auto items-center">
               <div className="inline-block text-center after">
                 <h2 className="inline-block text-white md:text-slate-950 md:text-shadow-hidden text-shadow h2 ">
-                  Deal Of The Week
+                  Oferta da Semana
                 </h2>
               </div>
               <ul className="mt-16">
@@ -53,12 +53,12 @@ const DealOfWeek = () => {
                   <TimerItem timer={timeLeft.seconds} timerUni="sec" />
                 )}
               </ul>
-              <Button className="w-36 bg-slate-950 border-none mt-12 hover:bg-[#fe4c50]">
+              <Button className="w-36 bg-slate-950 border-none mt-12 hover:bg-slate-900">
                 <a
                   href="#topo"
                   className="block text-white uppercase text-sm font-semibold text-center w-full"
                 >
-                  Shop Now
+                  compre agora
                 </a>
               </Button>
             </div>
