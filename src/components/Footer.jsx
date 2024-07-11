@@ -5,8 +5,8 @@ import FooterSocial from "./FooterSocial";
 const Footer = () => {
   return (
     <div className="w-full mt-12 h-auto bg-[#f3f3f3] py-4">
-      <Container>
-        <div className="flex justify-between md:flex-row flex-col">
+      <Container className="flex flex-col md:flex-row justify-center items-center">
+        <div className="flex items-center justify-between md:flex-row flex-col">
           <FooterNav />
 
           <FooterSocial />

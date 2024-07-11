@@ -6,6 +6,7 @@ import BannerHome from "./components/Banner";
 import DealOfWeek from "./components/DealOfWeek";
 import Benefits from "./components/Benefits";
 import Footer from "./components/Footer";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <DealOfWeek />
       <Benefits />
       <Footer />
+      <ScrollTop />
     </div>
   );
 }

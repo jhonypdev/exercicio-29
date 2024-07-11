@@ -9,7 +9,7 @@ import SocialItem from "./SocialItem";
 
 const FooterSocial = ({}) => (
   <div className="h-32 flex items-center md:justify-end justify-center">
-    <ul>
+    <ul className="flex gap-4">
       <SocialItem icon={<FaFacebook />} />
       <SocialItem icon={<FaTwitter />} />
       <SocialItem icon={<FaInstagram />} />
