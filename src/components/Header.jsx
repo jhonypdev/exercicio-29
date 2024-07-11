@@ -7,7 +7,7 @@ const Header = () => {
 	return (
 		<header
 			id="hg_300"
-			className=" py-3 top-0 left-0 w-full bg-white z-10 shadow-sm">
+			className="fixed py-3 top-0 left-0 w-full bg-transparent z-10 ">
 			<Container fluid>
 				<NavStore />
 			</Container>

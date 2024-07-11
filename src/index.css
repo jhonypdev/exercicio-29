@@ -17,3 +17,30 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
 }
+
+div {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+}
+.h2 {
+	font-size: calc(1.325rem + 0.9vw);
+}
+.text-shadow {
+	text-shadow: 2px 2px 10px black;
+}
+.text-shadow-hidden {
+	text-shadow: none;
+}
+
+.after::after {
+	display: block;
+	position: absolute;
+	top: calc(100% + 13px);
+	left: 50%;
+	transform: translateX(-50%);
+	width: 250px;
+	height: 5px;
+	background: #fe4c50;
+	content: "";
+}

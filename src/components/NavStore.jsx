@@ -1,39 +1,31 @@
 /** @format */
-
-import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import LogoContainer from "./Logo";
 import NavUser from "./NavUser";
-import { BiMenu } from "react-icons/bi";
-import { useState } from "react";
 
 const NavStore = () => {
-	const [show, setShow] = useState(false);
-
-	const handleClose = () => setShow(false);
-	const toggleShow = () => setShow((s) => !s);
 	return (
-		<Navbar expand={"sm"}>
-			<Container fluid className="flex-nowrap">
-				<Button
-					className="bg-transparent text-slate-500 border border-slate-400 hover:text-slate-400"
-					onClick={toggleShow}>
-					<BiMenu />
-				</Button>
+		<Navbar
+			collapseOnSelect
+			expand="lg"
+			className="bg-body-tertiary shadow-sm rounded-[10px]">
+			<Container fluid className="justify-between">
 				<LogoContainer />
-				<NavUser />
-				<Navbar.Offcanvas aria-labelledby={`offcanvasNavbarLabel-expand-sm`}>
-					<Offcanvas.Header>
-						<LogoContainer />
-					</Offcanvas.Header>
-					<Offcanvas.Body>
-						<Nav className="justify-end pe-3">
-							<Nav.Link href="#home">Home</Nav.Link>
-							<Nav.Link href="#home">Shop</Nav.Link>
-							<Nav.Link href="#home">Contacts</Nav.Link>
-							<Nav.Link href="#home">Promotions</Nav.Link>
-						</Nav>
-					</Offcanvas.Body>
-				</Navbar.Offcanvas>
+				<Navbar.Toggle
+					aria-controls="responsive-navbar-nav"
+					className="text-sm p-1"
+				/>
+				<Navbar.Collapse id="responsive-navbar-nav">
+					<Nav className="ms-auto">
+						<Nav.Link href="#home">Inicio</Nav.Link>
+						<Nav.Link href="#home">Shop</Nav.Link>
+						<Nav.Link href="#home">Contato</Nav.Link>
+						<Nav.Link href="#home">Promoção</Nav.Link>
+					</Nav>
+					<NavUser />
+				</Navbar.Collapse>
 			</Container>
 		</Navbar>
 	);
