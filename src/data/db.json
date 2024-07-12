@@ -1,13 +1,82 @@
 {
-  "product": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+	"products": [
+		{
+			"id": 1,
+			"title": "Jaqueta",
+			"price": 29.99,
+			"image": "/images/products/moda1.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Conjunto",
+			"price": 49.99,
+			"image": "/images/products/moda2.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Casaco",
+			"price": 19.99,
+			"image": "/images/products/moda3.jpg"
+		},
+		{
+			"id": 4,
+			"title": "Vestido",
+			"price": 99.99,
+			"image": "/images/products/moda4.jpg"
+		},
+		{
+			"id": 5,
+			"title": "Blusa F",
+			"price": 39.99,
+			"image": "/images/products/moda5.jpg"
+		},
+		{
+			"id": 6,
+			"title": "Camisa M",
+			"price": 59.99,
+			"image": "/images/products/moda6.jpeg"
+		},
+		{
+			"id": 7,
+			"title": "Blusa F",
+			"price": 22.99,
+			"image": "/images/products/moda7.jpg"
+		},
+		{
+			"id": 8,
+			"title": "Camiseta M",
+			"price": 45.99,
+			"image": "/images/products/moda8.jpg"
+		},
+		{
+			"id": 9,
+			"title": "Box Conjunto M",
+			"price": 34.99,
+			"image": "/images/products/moda9.jpg"
+		},
+		{
+			"id": 10,
+			"title": "Camiseta Msc",
+			"price": 78.99,
+			"image": "/images/products/moda10.png"
+		},
+		{
+			"id": 11,
+			"title": "Sueter M",
+			"price": 65.99,
+			"image": "/images/products/moda11.png"
+		},
+		{
+			"id": 12,
+			"title": "Agasalho",
+			"price": 53.99,
+			"image": "/images/products/moda12.png"
+		},
+		{
+			"id": 13,
+			"title": "Agasalho M",
+			"price": 88.99,
+			"image": "/images/products/moda13.png"
+		}
+	]
 }

@@ -4,7 +4,7 @@ import { FaCartShopping } from "react-icons/fa6";
 
 import { Nav } from "react-bootstrap";
 
-const NavUser = () => {
+const NavUser = ({cartItemsCount }) => {
   return (
     <Nav className="sm:ml-5 gap-4 justify-center flex-row items-center text-xl py-4 md:py-0">
       <Nav.Item className="inline-block text-center ">
@@ -23,7 +23,7 @@ const NavUser = () => {
         >
           <FaCartShopping />
           <span className="flex items-center justify-center absolute -top-1 -right-0 bg-[#fe4c50] rounded-[100%] w-4 h-4 text-xs text-white font-semibold">
-            2
+           {cartItemsCount }
           </span>
         </Nav.Link>
       </Nav.Item>

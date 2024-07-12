@@ -20,7 +20,7 @@ const DealOfWeek = () => {
   }, []);
 
   return (
-    <div className="w-full mt-10 bg-[#f2f2f2] relative">
+    <div className="w-full mt-10 bg-[#f2f2f2] relative" id="deal">
       <Container>
         <div className="row items-center">
           <div className="">

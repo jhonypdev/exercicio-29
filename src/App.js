@@ -7,18 +7,27 @@ import DealOfWeek from "./components/DealOfWeek";
 import Benefits from "./components/Benefits";
 import Footer from "./components/Footer";
 import ScrollTop from "./components/ScrollTop";
+import Products from "./components/Products";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <BannerHome />
-      <DealOfWeek />
-      <Benefits />
-      <Footer />
-      <ScrollTop />
-    </div>
-  );
+	const [cartItems, setCartsItems] = useState([]);
+
+	const addToCart = (product) => {
+		setCartsItems([...cartItems, product]);
+	};
+
+	return (
+		<div className="App">
+			<Header cartItemsCount={cartItems.length} />
+			<BannerHome />
+			<DealOfWeek />
+			<Products addToCart={addToCart}/>
+			<Benefits />
+			<Footer />
+			<ScrollTop />
+		</div>
+	);
 }
 
 export default App;

@@ -44,3 +44,12 @@ div {
 	background: #fe4c50;
 	content: "";
 }
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.no-scrollbar {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
