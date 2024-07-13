@@ -78,7 +78,7 @@ const DealOfWeek = () => {
 									Oferta da Semana
 								</h2>
 							</div>
-							<ul className="mt-16">
+							<ul className=" flex items-center justify-between gap-4 mt-16">
 								{timeLeft &&
 									timeLeft.days !== undefined &&
 									timeLeft.days !== 0 && (
