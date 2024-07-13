@@ -21,8 +21,8 @@ function App() {
 		<div className="App">
 			<Header cartItemsCount={cartItems.length} />
 			<BannerHome />
-			<DealOfWeek />
-			<Products addToCart={addToCart}/>
+			<DealOfWeek addToCart={addToCart} />
+			<Products addToCart={addToCart} />
 			<Benefits />
 			<Footer />
 			<ScrollTop />

@@ -1,21 +1,25 @@
+/** @format */
+
 const calculateTime = (startDateTime, endDateTime) => {
-  console.log(startDateTime, endDateTime, "os parametros recebidos");
+	const now = new Date();
+	const start = new Date(startDateTime);
+	const end = new Date(endDateTime);
 
-  const difference = endDateTime - startDateTime;
-  console.log(difference);
-  let timeLeft = {};
+	let timeLeft = {};
+	let isStarted = false;
 
-  if (difference > 0) {
-    timeLeft = {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / (1000 * 60)) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-    };
-  }
+	if (now >= start && end > now) {
+		isStarted = true;
+		const difference = end - now;
+		timeLeft = {
+			days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+			hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+			minutes: Math.floor((difference / (1000 * 60)) % 60),
+			seconds: Math.floor((difference / 1000) % 60),
+		};
+	}
 
-  console.log(timeLeft);
-  return timeLeft;
+	return { timeLeft, isStarted };
 };
 
 export default calculateTime;
